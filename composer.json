@@ -1,0 +1,27 @@
+{
+    "name": "rodrigotutz/portifolio-novo",
+    "description": "Novo portifólio com novo visual e recursos",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Rodrigo Tutz",
+            "email": "rodrigoantunestutz@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "coffeecode/router": "^2.0",
+        "rodrigotutz/controller": "^1.6",
+        "vlucas/phpdotenv": "^5.6",
+        "rodrigotutz/mailer": "^1.0"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^7.0",
+        "spatie/ignition": "^1.13"
+    }
+}
