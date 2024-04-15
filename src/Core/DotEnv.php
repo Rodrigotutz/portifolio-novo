@@ -1,7 +1,5 @@
 <?php
 
-namespace App\Helpers;
-
 use Dotenv\Repository\RepositoryBuilder;
 use Dotenv\Repository\Adapter\EnvConstAdapter;
 use Dotenv\Repository\Adapter\PutenvAdapter;

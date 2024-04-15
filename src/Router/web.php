@@ -7,12 +7,17 @@ $router->namespace("App\Controllers");
 
 $router->group(null);
 $router->get('/', "Web:index", "web.index");
-$router->get('/about', "Web:about", "web.about");
+$router->get('/apps', "Web:apps", "web.apps");
+$router->get('/certificados', "Web:certifieds", "web.certifieds");
+$router->get('/contato', "Web:contact", "web.contact");
 
-$router->get('/erro', "Error.index", "error.index");
+$router->group('oops');
+$router->get('/erro/{errcode}', "Error:index", "error.index");
 
 $router->dispatch();
 
 if($router->error()) {
-    $router->redirect("error.index");
+    $router->redirect("error.index", [
+        "errcode" => $router->error()
+    ]);
 }
