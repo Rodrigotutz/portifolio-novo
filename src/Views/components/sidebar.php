@@ -14,16 +14,16 @@
       <div class="modal-body d-flex flex-column text-dark">
         <ul class="navbar-nav navbar-dark gap-1">
             <li class="nav-item bg-dark text-white rounded-3 container">
-                <a href="<?= $router->route('web.index')?>" class="nav-link active fs-6"><i class="bi bi-house"></i> Inicio</a>
+                <a href="<?= $router->route('web.index')?>" class="nav-link <?= $home ?? "" ?> fs-6"><i class="bi bi-house"></i> Inicio</a>
             </li>
             <li class="nav-item bg-dark rounded-3 container">
-                <a href="<?= $router->route('web.apps') ?>" class="nav-link fs-6"><i class="bi bi-terminal"></i> Apps</a>
+                <a href="<?= $router->route('web.apps') ?>" class="nav-link <?= $apps ?? "" ?> fs-6"><i class="bi bi-terminal"></i> Apps</a>
             </li>
             <li class="nav-item bg-dark rounded-3 container">
-                <a href="<?= $router->route('web.certifieds') ?>" class="nav-link fs-6"><i class="bi bi-patch-check"></i> Cerficados</a>
+                <a href="<?= $router->route('web.certifieds') ?>" class="nav-link <?= $certifieds ?? "" ?> fs-6"><i class="bi bi-patch-check"></i> Cerficados</a>
             </li>
             <li class="nav-item bg-dark rounded-3 container">
-                <a href="<?= $router->route('web.contact') ?>" class="nav-link fs-6"><i class="bi bi-telephone"></i> Contato</a>
+                <a href="<?= $router->route('web.contact') ?>" class="nav-link <?= $contact ?? "" ?> fs-6"><i class="bi bi-telephone"></i> Contato</a>
             </li>
         </ul>
       </div>

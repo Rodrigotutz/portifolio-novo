@@ -12,7 +12,8 @@ class Web extends Controller {
 
     public function index(): void {
         $this->view->addData([
-            "title" => "Rodrigo Tutz | Página inicial"
+            "title" => "Rodrigo Tutz | Página inicial",
+            "home" => "active"
         ]);
         
         echo $this->view->render('web/home');
@@ -20,7 +21,8 @@ class Web extends Controller {
 
     public function apps(): void {
         $this->view->addData([
-            "title" => "Rodrigo Tutz | Apps"
+            "title" => "Rodrigo Tutz | Apps",
+            "apps" => 'active'
         ]);
         
         echo $this->view->render('web/apps');
@@ -28,7 +30,8 @@ class Web extends Controller {
 
     public function certifieds(): void {
         $this->view->addData([
-            "title" => "Rodrigo Tutz | Meus certificados"
+            "title" => "Rodrigo Tutz | Meus certificados",
+            "certifieds" => "active"
         ]);
         
         echo $this->view->render('web/certifieds');
@@ -36,7 +39,8 @@ class Web extends Controller {
 
     public function contact(): void {
         $this->view->addData([
-            "title" => "Rodrigo Tutz | Meus contatos"
+            "title" => "Rodrigo Tutz | Meus contatos",
+            "contact" => "active"
         ]);
         
         echo $this->view->render('web/contact');
