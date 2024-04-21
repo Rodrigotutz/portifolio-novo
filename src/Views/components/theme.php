@@ -15,6 +15,7 @@
         />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <link rel="stylesheet" href="<?=asset('css/theme.css') ?>">
+        <link rel="stylesheet" href="<?=asset('css/home.css') ?>">
 
     </head>
 
@@ -27,8 +28,10 @@
             <?= $this->section('content')?>
         </main>
 
-        <footer>
-        </footer>
+        <div class="d-flex flex-column gap-2 mt-3 social">
+            <a href="https://wa.me/5517981337392?text=Ol%C3%A1+Rodrigo+Tutz" target="_blank" class="text-white"><i class="bi bi-whatsapp fs-5"></i></a>
+            <a href="https://br.linkedin.com/in/rodrigotutz" target="_blank" class="text-white"><i class="bi bi-linkedin fs-5"></i></a>
+        </div>
 
 
         <script

@@ -6,3 +6,9 @@ body {
 .active {
     font-weight: bold;
 }
+
+.social {
+    position: fixed;
+    bottom: 1rem;
+    right: 1.5rem;
+}

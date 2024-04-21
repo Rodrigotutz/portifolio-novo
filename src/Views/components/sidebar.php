@@ -10,7 +10,7 @@
       <div class="modal-header" style="border:none;">
         <h5 class="modal-title text-muted fw-bold">Rodrigo Tutz</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
+      </div> 
       <div class="modal-body d-flex flex-column text-dark">
         <ul class="navbar-nav navbar-dark gap-1">
             <li class="nav-item bg-dark text-white rounded-3 container">
@@ -30,7 +30,10 @@
       <div class="container mb-2">
         <ul class="navbar-nav navbar-dark">
           <li class="nav-item bg-dark text-white rounded-3 container">
-              <a href="https://github.com/rodrigotutz" target="_blank" class="nav-link active fs-6"><i class="bi bi-github"></i> Github  </a>
+              <small><a href="https://github.com/rodrigotutz" target="_blank" class="nav-link active"><i class="bi bi-github"></i> Github  </a></small>
+          </li>
+          <li class="nav-item text-center text-muted mt-2 rounded-3">
+              <small style="font-size: 12px;">&copy; 2024 - Rodrigo Tutz</small>
           </li>
         </ul>
       </div>
