@@ -1,3 +1,18 @@
+@import url(animation.css);
+
+::-webkit-scrollbar{
+    width: 0;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #273036;
+    border-radius: 25px;
+}
+html, body {
+    overflow-x: hidden;
+}
+
 body {
     width: 100%;
     min-height: 100vh;
@@ -12,3 +27,8 @@ body {
     bottom: 1rem;
     right: 1.5rem;
 }
+
+.divider {
+    width: 110%;
+}
+

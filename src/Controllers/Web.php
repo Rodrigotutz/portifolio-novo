@@ -13,7 +13,8 @@ class Web extends Controller {
     public function index(): void {
         $this->view->addData([
             "title" => "Rodrigo Tutz | Página inicial",
-            "home" => "active"
+            "home" => "active",
+            'sidebar' => "text-dark"
         ]);
         
         echo $this->view->render('web/home');
@@ -46,4 +47,12 @@ class Web extends Controller {
         echo $this->view->render('web/contact');
     }
 
+    public function teste(): void {
+        
+        $this->view->addData([
+            "title" => "Rodrigo Tutz | Página Teste"
+        ]);
+        
+        echo $this->view->render('web/teste');
+    }
 }

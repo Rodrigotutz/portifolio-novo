@@ -1,54 +1,11 @@
-.animate-txt span {
-    position: relative;
+
+.about {
+    background: #273036;
+    min-height: 30vh;
+    margin-top: -1rem;
 }
 
-.animate-txt span::before {
-    content: "";
-    color: white;
-    animation: words 25s infinite;
-}
 
-.animate-txt span::after {
-    content: "";
-    position: absolute;
-    height: 105%;
-    border-left: 2px solid white;
-    right: -8px;
-    animation: pointer 0.7s infinite, typing 25s steps(15) infinite;
-    width: calc(110%);
-    background-color: rgba(31,30,30,1);
-}
-
-@keyframes pointer {
-    0% {
-        border-left: 2px solid #212529;
-    }
-}
-
-@keyframes typing {
-    10%, 15%, 30%, 35%, 50%, 55%, 70%, 90%, 95% {
-        width: 0;
-    }
-
-    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
-        width: calc(100% + 15px);
-    }
-}
-
-@keyframes words {
-    0%, 20% {
-        content: "Desenvolvimento Web";
-    }
-    21%, 40% {
-        content: "PHP e Laravel";
-    }
-    41%, 60% {
-        content: "Vue.js e React";
-    }
-    61%, 80% {
-        content: "Git e Github";
-    }
-    81%, 100% {
-        content: "Bootstrap e Tailwind CSS";
-    }
+.card-div {
+    border-radius: 25px !important;
 }

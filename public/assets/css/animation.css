@@ -1,0 +1,85 @@
+.animate-txt span {
+    position: relative;
+}
+
+.animate-txt span::before {
+    content: "";
+    animation: words 25s infinite;
+}
+
+.animate-txt span::after {
+    content: "";
+    position: absolute;
+    height: 105%;
+    border-left: 2px solid white;
+    right: -8px;
+    animation: pointer 0.7s infinite, typing 25s steps(15) infinite;
+    width: calc(110%);
+    background-color: rgb(255, 255, 255);
+}
+
+@keyframes pointer {
+    0% {
+        border-left: 2px solid #1a1919;
+    }
+}
+
+@keyframes typing {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 90%, 95% {
+        width: 0;
+    }
+
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
+        width: calc(100% + 15px);
+    }
+}
+
+@keyframes words {
+    0%, 20% {
+        content: "Desenvolvimento Web";
+    }
+    21%, 40% {
+        content: "PHP e Laravel";
+    }
+    41%, 60% {
+        content: "Vue.js e React";
+    }
+    61%, 80% {
+        content: "Git e Github";
+    }
+    81%, 100% {
+        content: "Bootstrap e Tailwind CSS";
+    }
+}
+
+
+.wave-1{
+    animation: moveWave1 3s  ease-in-out infinite alternate;
+}
+
+
+@keyframes moveWave1{
+    from {
+        transform: translateX(-100px);
+    }
+}
+
+.wave-2{
+    animation: moveWave2 3s ease-in-out infinite alternate;
+}
+
+@keyframes moveWave2{
+    from {
+        transform: translateX(-220px);
+    }
+}
+
+.wave-3{
+    animation: moveWave3 5s ease-in-out infinite alternate;
+}
+
+@keyframes moveWave3{
+    from {
+        transform: translateX(-300px);
+    }
+}
