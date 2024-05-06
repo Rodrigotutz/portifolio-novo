@@ -88,7 +88,4 @@
         </div>
     </div>  
 
-    <div class="mt-5 text-white text-center pb-4 small" style="opacity: 0.3;">
-        <small style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#sidebar">Cliqui aqui ou acesse o menu de navegação lateral para ver mais</small>
-    </div>
 </section>

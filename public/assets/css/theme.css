@@ -1,3 +1,4 @@
+@import url(colors.css);
 @import url(animation.css);
 
 ::-webkit-scrollbar{
@@ -18,6 +19,10 @@ body {
     min-height: 100vh;
 }
 
+.sidebar-btn {
+    z-index: 1 !important;
+}
+
 .active {
     font-weight: bold;
 }
@@ -31,4 +36,5 @@ body {
 .divider {
     width: 110%;
 }
+
 

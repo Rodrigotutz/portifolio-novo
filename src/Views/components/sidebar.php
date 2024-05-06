@@ -1,5 +1,5 @@
 <!-- Button trigger modal -->
-<button type="button" class="btn" style="position: fixed;" data-bs-toggle="modal" data-bs-target="#sidebar">
+<button type="button" class="btn sidebar-btn" style="position: fixed;" data-bs-toggle="modal" data-bs-target="#sidebar">
   <i class="bi bi-list fs-4 <?= $sidebar ?? "text-white" ?>"></i>
 </button>
 
