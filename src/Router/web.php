@@ -12,6 +12,9 @@ $router->get('/certificados', "Web:certifieds", "web.certifieds");
 $router->get('/contato', "Web:contact", "web.contact");
 $router->get('/teste', "Web:teste", "web.teste");
 
+$router->group('resource');
+$router->post('/', "Resource:mail", "resource.mail");
+
 $router->group('oops');
 $router->get('/erro/{errcode}', "Error:index", "error.index");
 

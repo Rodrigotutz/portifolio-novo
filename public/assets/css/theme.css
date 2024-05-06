@@ -19,6 +19,20 @@ body {
     min-height: 100vh;
 }
 
+.messages {
+    position: fixed;
+    bottom: 5px;
+    right: 60px;
+}
+
+@media(max-width: 768px) {
+    .messages {
+        position: fixed;
+        bottom: 5px;
+        right: 30px;
+    }
+}
+
 .sidebar-btn {
     z-index: 1 !important;
 }

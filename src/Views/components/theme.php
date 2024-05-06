@@ -32,6 +32,9 @@
             <a href="https://br.linkedin.com/in/rodrigotutz" target="_blank" class="text-white"><i class="bi bi-linkedin fs-5"></i></a>
         </div>
 
+        <div class="messages alert alert-<?= $class ?> fw-bold">
+            <span class="text-<?= $class ?>"><?= $message ?></span>
+        </div>
 
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -44,5 +47,6 @@
             integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
             crossorigin="anonymous"
         ></script>
+        <script src="<?= asset('js/app.js') ?>"></script>
     </body>
 </html>
