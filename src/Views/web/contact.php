@@ -1,5 +1,8 @@
 <?php $this->layout('components/theme', [$contact]) ?>
 
+
+
+
 <section class="container mt-5">
     <div style="min-height: 100vh;"  class="row justify-content-center align-items-center">
         <div class="col-12 col-md-7 d-flex justify-content-center">
@@ -28,7 +31,7 @@
                 </div>
 
                 <div class="text-center">
-                    <button type="submit" class="btn btn-outline-light mb-4"><i class="bi bi-send-fill"></i> Enviar mensagem</button>
+                    <button type="submit" id="send" class="btn btn-outline-light mb-4"><i class="bi bi-send-fill"></i> Enviar mensagem</button>
                 </div>
             </form>
         </div>
@@ -45,3 +48,16 @@
         </div>
     </div>
 </section>
+
+
+
+
+<script>
+    var send = document.querySelector("#send")
+    var containerLoading = document.querySelector("#containerLoading")
+
+    send.addEventListener("click", () => {
+        containerLoading.classList.remove("d-none")
+        containerLoading.classList.add("d-flex")
+    })
+</script>

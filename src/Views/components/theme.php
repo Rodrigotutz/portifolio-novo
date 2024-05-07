@@ -15,6 +15,11 @@
     </head>
 
     <body class="bg-dark text-white">
+
+        <div id="containerLoading" class="d-none flex-column justify-content-center align-items-center text-white" style="position: fixed; height:100vh; width:100%; background: rgba(25,25,25, 0.7);z-index:20000000;" id="loading">
+            <h2 class="fw-bold">Enviando email...</h2>
+            <img style="width: 50px;" src="<?= asset("img/loading.gif")?>" alt="Carregando">
+        </div>
         <header>
             <?= $this->insert('components/sidebar') ?>
         </header>
