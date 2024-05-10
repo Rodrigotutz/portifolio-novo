@@ -1,7 +1,14 @@
-<?php $this->layout('components/theme', [$apps]) ?>
+<?php $this->layout('components/theme', [$appLink]) ?>
 
-<div style="min-height: 100vh;" class="d-flex flex-column justify-content-center align-items-center">
-    <h1 class="display-6 fw-bold">Em desenvolvimento</h1>
-    <h1 class="display-6 fw-bold">Aguarde...</h1>
-    <span class="display-1"><i class="fa-solid fa-person-digging"></i></span>
+<div style="min-height: 100vh;" class="container mt-5 pt-5">
+    <div class="row gap-3 justify-content-center">
+        <?php foreach($apps as $app): ?>
+            <div class="col-10 col-md-3 mb-3 p-1 text-center">
+                <h4><?= $app->title ?></h4>
+                <small><?= $app->description ?></small>
+                <img src="<?= asset("$app->path") ?>" class="w-100 mt-2">
+                <a href="<?= $app->link ?>" target="_blank" class="btn btn-light mt-3">Acessar <?= $app->title ?></a>
+            </div>
+        <?php endforeach; ?>
+    </div>
 </div>

@@ -19,6 +19,11 @@ body {
     min-height: 100vh;
 }
 
+body, a {
+    text-decoration: none;
+    color: #fff;
+}
+
 .messages {
     position: fixed;
     bottom: 5px;

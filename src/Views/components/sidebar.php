@@ -17,7 +17,7 @@
                 <a href="<?= $router->route('web.index')?>" class="nav-link <?= $home ?? "" ?> fs-6"><i class="bi bi-house"></i> Inicio</a>
             </li>
             <li class="nav-item bg-dark rounded-3 container">
-                <a href="<?= $router->route('web.apps') ?>" class="nav-link <?= $apps ?? "" ?> fs-6"><i class="bi bi-terminal"></i> Apps</a>
+                <a href="<?= $router->route('web.apps') ?>" class="nav-link <?= $appLink ?? "" ?> fs-6"><i class="bi bi-terminal"></i> Apps</a>
             </li>
             <li class="nav-item bg-dark rounded-3 container">
                 <a href="<?= $router->route('web.certifieds') ?>" class="nav-link <?= $certifieds ?? "" ?> fs-6"><i class="bi bi-patch-check"></i> Cerficados</a>

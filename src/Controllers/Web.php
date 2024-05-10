@@ -2,9 +2,12 @@
 
 namespace App\Controllers;
 
+use App\Models\App;
 use Rodrigotutz\Controller;
 
 class Web extends Controller {
+
+    public $app;
 
     public function __construct($router) {   
         parent::__construct($router, dirname(__DIR__, 1). "/Views");
@@ -21,9 +24,13 @@ class Web extends Controller {
     }
 
     public function apps(): void {
+
+        $apps = $this->app = (new App())->find('active = 1')->order('app_order ASC')->fetch(true);
+
         $this->view->addData([
             "title" => "Rodrigo Tutz | Apps",
-            "apps" => 'active'
+            "appLink" => 'active',
+            "apps" => $apps ?? []
         ]);
         
         echo $this->view->render('web/apps');
