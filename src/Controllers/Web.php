@@ -25,7 +25,7 @@ class Web extends Controller {
 
     public function apps(): void {
 
-        $apps = $this->app = (new App())->find('active = 1')->order('app_order ASC')->fetch(true);
+        $apps = $this->app = (new App())->find('active = 1')->order('app_order ASC')->fetch(true) ?? "  ";
 
         $this->view->addData([
             "title" => "Rodrigo Tutz | Apps",
