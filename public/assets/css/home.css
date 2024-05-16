@@ -9,3 +9,87 @@
 .card-div {
     border-radius: 25px !important;
 }
+
+.heading {
+    font-weight: 600;
+    font-size: 40px;
+    margin: 30px 0;
+    text-align: center;
+}
+
+#timeline-section {
+    padding: 0;
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+#timeline-section::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: #ccc;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#timeline-section li {
+    width: 50%;
+    clear: both;
+}
+
+#timeline-section li:nth-child(odd) {
+    float: right;
+}
+
+#timeline-section li:nth-child(even) {
+    float: left;
+}
+
+#timeline-section li .timeline-area {
+    position: relative;
+    padding: 25px 20px;
+    margin: 20px 0;
+}
+
+#timeline-section li .timeline-area .content h4{
+    color:rgb(0, 132, 255);
+}
+
+#timeline-section li .timeline-area .content p {
+    font-weight: 300;
+}
+
+#timeline-section li:nth-child(even) .timeline-area {
+    text-align: right;
+    padding-left: 70px;
+}
+
+#timeline-section li:nth-child(odd) .timeline-area {
+    text-align: left;
+    padding-right: 70px;
+}
+
+#timeline-section li:nth-child(odd) .timeline-area::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 30px;
+    left: -7px;
+    border-radius: 50%;
+    background-color: rgb(0, 132, 255);
+}
+
+#timeline-section li:nth-child(even) .timeline-area::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 30px;
+    right: -7px;
+    border-radius: 50%;
+    background-color: rgb(0, 132, 255);
+}

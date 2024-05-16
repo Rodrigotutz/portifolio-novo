@@ -1,14 +1,14 @@
 <?php $this->layout('components/theme', [$home, $sidebar]) ?>
 
-<section class="bg-white text-dark"  style="margin-bottom: -20rem; height: 130vh;">
+<section class="bg-white text-dark" style="margin-bottom: -20rem; height: 130vh;">
     <div class="row justify-content-center align-items-center" style="min-height: 75vh;">
         <div class="col-md-6 col-sm-12 text-center">
             <h1 class="display-2 fw-bold">Olá!</h1>
             <h1 class="display-4 fw-bold">Eu sou o Tutz!</h1>
             <div class="animate-txt">
                 <span class="fw-bold fs-6 text-dark"></span>
-            </div> 
-            <a href="https://api.whatsapp.com/send/?phone=5517981337392&text=Ol%C3%A1+Rodrigo+Tutz&type=phone_number&app_absent=0" class="btn btn-dark mt-3 fw-bold" target="_blank" ><i class="bi bi-whatsapp"></i> Whatsapp</a>
+            </div>
+            <a href="https://api.whatsapp.com/send/?phone=5517981337392&text=Ol%C3%A1+Rodrigo+Tutz&type=phone_number&app_absent=0" class="btn btn-dark mt-3 fw-bold" target="_blank"><i class="bi bi-whatsapp"></i> Whatsapp</a>
         </div>
         <div class="col-md-6 d-none d-md-block mt-2 text-center">
             <img src="<?= asset('img/tutz-anime.svg') ?>" class="w-100" style="border-radius: 50%;" alt="Rodrigo">
@@ -28,64 +28,122 @@
     </svg>
 </div>
 
-<section class="about">
-    <div class="skills pb-5">
-        <div class="container pt-5">
-            <h2 class="text-center text-white mb-5">Habilidades do Tutz:</h2>
-            <div class="row">
-                <div class="col-md-3 mt-2">
-                    <div class="card card-div shadow" style="height: 400px;">
-                        <div class="card-body text-center">
-                            <img src="<?= asset('img/palet.png') ?>" style="width: 50px;" class="img-fluid mb-2 mt-3" alt="Designer">
-                            <h3 class="card-title">Designer</h3>
-                            <h6 class="card-subtitle mt-3">Desenho toda as estrutura do seu site, interações e padrões de projeto</h6> <br>
-                            <span class="fw-bold">Ferramentas</span>
-                            <p class="mt-1">Adobe XD, Photoshop, Illustrator </p>
-                        </div>
+<section>
+    <div class="container pt-5 mb-5 pb-5">
+        <h2 class="text-center text-white mb-5">Skills do Tutz:</h2>
+        <div class="row">
+            <div class="col-md-3 mt-2">
+                <div class="card card-div shadow" style="height: 400px;">
+                    <div class="card-body text-center">
+                        <img src="<?= asset('img/palet.png') ?>" style="width: 50px;" class="img-fluid mb-2 mt-3" alt="Designer">
+                        <h3 class="card-title">Designer</h3>
+                        <h6 class="card-subtitle mt-3">Desenho toda as estrutura do seu site, interações e padrões de projeto</h6> <br>
+                        <span class="fw-bold">Ferramentas</span>
+                        <p class="mt-1">Adobe XD, Photoshop </p>
                     </div>
                 </div>
+            </div>
 
-                <div class="col-md-3 mt-2">
-                    <div class="card card-div shadow" style="height: 400px;">
-                        <div class="card-body text-center">
-                            <img src="<?= asset('img/gears.png') ?>" style="width: 50px;" class="img-fluid mb-2 mt-3" alt="SEO">
-                            <h3 class="card-title">SEO</h3>
-                            <h6 class="card-subtitle mt-3">Otimização para os motores de busca, anúncios e geração de leads</h6> <br>
-                            <span class="fw-bold">Ferramentas</span>
-                            <p class="mt-1">Google Ads, Facebook Ads, SEO Optimization </p>
-                        </div>
+            <div class="col-md-3 mt-2">
+                <div class="card card-div shadow" style="height: 400px;">
+                    <div class="card-body text-center">
+                        <img src="<?= asset('img/gears.png') ?>" style="width: 50px;" class="img-fluid mb-2 mt-3" alt="SEO">
+                        <h3 class="card-title">SEO</h3>
+                        <h6 class="card-subtitle mt-3">Otimização para os motores de busca, anúncios e geração de leads</h6> <br>
+                        <span class="fw-bold">Ferramentas</span>
+                        <p class="mt-1">Google Ads, Facebook Ads, SEO Optimization </p>
                     </div>
                 </div>
+            </div>
 
-                <div class="col-md-3 mt-2">
-                    <div class="card card-div card-item-2 shadow" style="height: 400px;">
-                        <div class="card-body text-center">
-                            <img src="<?= asset('img/frontend.png') ?>" style="width: 50px;" class="img-fluid mb-2 mt-3" alt="Frontend">
-                            <h3 class="card-title">Frontend</h3>
-                            <h6 class="card-subtitle mt-3">Desenvolvimento da parte visual e as interações do seu site</h6> <br>
-                            <span class="fw-bold mt-3">Linguagens</span>
-                            <p class="mt-1">SASS, Javascript, Typescript</p>
-                            <span class="fw-bold">Frameworks</span>
-                            <p class="mt-1"> Vue.js, React.js, Bootstrap, Tailwind</p>
-                        </div>
+            <div class="col-md-3 mt-2">
+                <div class="card card-div card-item-2 shadow" style="height: 400px;">
+                    <div class="card-body text-center">
+                        <img src="<?= asset('img/frontend.png') ?>" style="width: 50px;" class="img-fluid mb-2 mt-3" alt="Frontend">
+                        <h3 class="card-title">Frontend</h3>
+                        <h6 class="card-subtitle mt-3">Desenvolvimento da parte visual e as interações do seu site</h6> <br>
+                        <span class="fw-bold mt-3">Linguagens</span>
+                        <p class="mt-1">SASS, Javascript, Typescript</p>
+                        <span class="fw-bold">Frameworks</span>
+                        <p class="mt-1"> Vue.js, React.js, Bootstrap, Tailwind</p>
                     </div>
                 </div>
+            </div>
 
-                <div class="col-md-3 mt-2">
-                    <div class="card card-div card-item-3 shadow" style="height: 400px;">
-                        <div class="card-body text-center">
-                            <img src="<?= asset('img/backend.png') ?>" style="width: 50px;" class="img-fluid mb-2 mt-3" alt="Backend">
-                            <h3 class="card-title">Backend</h3>
-                            <h6 class="card-subtitle mt-3">Desenvolvimento da parte funcional e de segurança do site com a estrutura MVC</h6> <br>
-                            <span class="fw-bold">Linguagens</span>
-                            <p class="mt-1">PHP, MySql</p>
-                            <span class="fw-bold">Frameworks</span>
-                            <p class="mt-1">Laravel, Slim</p>
-                        </div>
+            <div class="col-md-3 mt-2">
+                <div class="card card-div card-item-3 shadow" style="height: 400px;">
+                    <div class="card-body text-center">
+                        <img src="<?= asset('img/backend.png') ?>" style="width: 50px;" class="img-fluid mb-2 mt-3" alt="Backend">
+                        <h3 class="card-title">Backend</h3>
+                        <h6 class="card-subtitle mt-3">Desenvolvimento da parte funcional e de segurança do site com a estrutura MVC</h6> <br>
+                        <span class="fw-bold">Linguagens</span>
+                        <p class="mt-1">PHP, MySql</p>
+                        <span class="fw-bold">Framework</span>
+                        <p class="mt-1">Laravel</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>  
+    </div>
+</section>
 
+<section style="border-top: 3px solid rgba(255, 255, 255, 0.1);">
+    <div class="container mt-5 pb-5">
+        <div class="text-center">
+            <h2>Linguagens Usadas</h2>
+            <p>Quer saber quais as linguagens que utilizei para construir esse site?</p>
+        </div>
+
+        <div class="row">
+            <div class="col-xl-12">
+                <ul id="timeline-section">
+                    <li>
+                        <div class="timeline-area">
+                            <div class="time">Iniciando com PHP</div>
+                            <div class="content">
+                                <h4>Criando Estrutura MVC</h4>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-area">
+                            <div class="time">Iniciando com PHP</div>
+                            <div class="content">
+                                <h4>Criando Estrutura MVC</h4>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-area">
+                            <div class="time">Iniciando com PHP</div>
+                            <div class="content">
+                                <h4>Criando Estrutura MVC</h4>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-area">
+                            <div class="time">Iniciando com PHP</div>
+                            <div class="content">
+                                <h4>Criando Estrutura MVC</h4>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-area">
+                            <div class="time">Iniciando com PHP</div>
+                            <div class="content">
+                                <h4>Criando Estrutura MVC</h4>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </section>
